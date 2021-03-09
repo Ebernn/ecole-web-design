@@ -1,0 +1,239 @@
+/*
+R�alis� par  
+M. ZAMMOURI Amin
+*/
+body
+{
+	width:962px; /* La largeur de l'élément en pixels */
+	margin:auto; 
+	padding:1px;
+	margin-top:20px;
+	margin-bottom:10px;
+        
+       
+        
+
+}
+
+/* =========== L'en-t�te de page =========== */
+
+#en-tete{
+	width :960px;
+	height:110px;
+	margin-top: 10px;
+	margin-bottom:0px;
+        
+	background-image:url("entete_application.png");
+	background-repeat:no-repeat;
+	
+}
+
+
+
+/* =========== Le menu de page =========== */
+
+#menu
+{
+	
+	width:170px;
+	margin-left:0px;
+	padding:0px;
+        float:left;
+       
+	
+}
+
+.t_menu{
+	
+	background-image:url("menu.png");
+	background-repeat:no-repeat;
+	padding          : 1px;
+	margin           : 1px;
+	width	         : 170px;
+	font-family      : Cambria;
+	text-align		 : center;
+	font-size		 : 13px;
+	font-weight		 : bold;
+	color            : white;
+}
+.td1{
+	color            : white;
+	width            : 150px;
+	height           : 30px;
+ 	font-size        : 15px;
+	font-weight      : bold;
+	text-align       : center;
+	border-top		 : 1px solid #ddd;			
+}
+
+
+td[class=td1]:hover{
+	text-indent      : 15px;
+	cursor           : pointer !important; cursor:hand;
+	background       : rgba(90,130,200,0.1);
+	
+}
+
+
+/* =========== Le corps de page =========== */
+
+#corps
+{
+	margin-left      : 180px;
+	margin-bottom    : 80px;
+	margin-top       : 13px;
+	padding	 	     : 5px;
+	width            : 767px;
+	border		     : 1px solid #ddd;	
+	color            : #B3B3B3;
+	background-color : #FFFFFF;
+	background-repeat: repeat-x;
+	height 	  	 	 : 500px;
+	
+	
+}
+
+/* ------------------------------*/
+
+#textclair{
+		width:200px;
+		height:100px;
+		border:0;
+		color: rgba(35,70,132,0.6);
+}
+
+/* ------------------------------*/
+#manip{
+	border:1px solid rgba(35,70,132,0.6);
+	border-style:dashed;
+	width        : 300px;
+	padding      : 2px;
+	margin-left  : 462px;
+	margin-top   : 20px;
+	color		 : rgba(35,70,132,0.6);
+}
+
+/* ------------------------------*/
+#compte-rendue{
+	
+	width        : 458px;
+	
+	margin-bottom: 20px;
+}
+
+/* ------------------------------*/
+.bout{
+	margin-left:5px;
+	width:80px;
+	height:23px;
+	font-family:"Cambria";
+	border:0;
+	background:#4682b4;
+	display:inline-block;
+	cursor:pointer !important; cursor:hand;
+	color:#fff;
+}
+
+hr{
+	color			 : rgba(234,234,234,0.6);
+	background-color : rgba(234,234,234,0.6);
+	height			 : 1px;
+	border			 : 0;
+}
+
+/* ------------------------------*/
+a,a:link, a:visited, a:active {
+	text-decoration : none;
+	color            : white;
+}
+/* ------------------------------*/
+
+#header{
+	
+	margin-top 		 : 1px;
+	font-family      : Cambria;
+	font-size        : 11px;
+	padding			 : 1px;
+}
+/* ------------------------------*/
+
+h2{
+	color			 : rgba(35,70,132,0.6);
+	text-decoration  : underline;
+}
+
+/* ------------------------------*/
+
+.equations{
+	font-family      : "Courier New";
+	font-size        : 16px;
+	font-weight      : bolder;
+	color            : black;
+	margin-left      : 20px;
+	
+}
+
+/* ------------------------------*/
+
+.paragraphe{
+	color			 : rgba(30,30,30,0.6);
+	text-align       : justify;
+	margin-left	     : 5px;
+	margin-right     : 5px;
+	text-indent      : 9px;
+	font-family      : Cambria;
+}
+
+.paragraphe::first-letter {
+	color       :rgba(35,70,132,0.6);
+	font-weight : bold;
+	font-size : 15px;
+}
+/* ------------------------------*/
+
+ul,ol{
+	color			 : rgba(35,70,132,0.6);
+	font-weight      : bold;
+	text-decoration  : underline;
+}
+/* ------------------------------*/
+
+.etapes_affine{
+	color			 : rgba(30,30,30,0.6);
+}
+/* ------------------------------*/
+
+input[type=text]:hover, input[type=text]:focus,input[type=password]:hover, input[type=password]:focus {
+	border-color     : #c5c5c5;
+	background       : #f6f6f6;
+}
+/* ------------------------------*/
+input, select {
+	padding          : 0.15em;
+	border           : 1px solid #ddd;
+	background       : #fafafa;
+	font             : bold 0.95em arial, sans-serif;
+	margin-top       : 5px;
+	-moz-border-radius:0.4em;
+	-khtml-border-radius:0.4em;
+}
+/* ------------------------------*/
+
+
+/* =========== Le pied de la page =========== */
+
+#pied-de-page{
+	width            : 950px;
+	margin-bottom    : 0px;
+	margin-top       : 20px;
+	height           : 20px;
+	padding-left     : 10px;
+	color            : white;
+	font-weight      : bold;
+	font-family      : "Times New Roman";
+	font-size        : 14px;
+	background-image : url(pied_de_page.png);
+	background-repeat: repeat-x;
+	
+       
+}
