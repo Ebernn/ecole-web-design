@@ -1,0 +1,26 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+}
+
+p, li, td {
+    list-style: square;
+    font-size: small;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+.spacing {
+    margin-top: 3em;
+}
+
+table {
+    border-collapse: collapse;
+}
+.extr {
+    background-color: #f3f3f3;
+}
