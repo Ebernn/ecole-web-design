@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title> TP 3 JavaScript - exercice 1</title>
+</head>
+
+<body>
+    <h3>Calculateur de salaire</h3>
+
+    <!-- Récupération des données -->
+
+    <form>
+        <div>
+            <label>Salaire brut :</label>
+            <input type="number" id="input-salary" name="salary">€
+        </div>
+        <div>
+            <label>Bonus :</label>
+            <input type="checkbox" id="input-bonus" name="bonus">
+        </div>
+        <div>
+            <label>Allocation :</label>
+            <input type="checkbox" id="input-allocation" name="allocation">
+        </div>
+        <div>
+            <label>Genre :</label>
+            <select type="select" id="input-gender" name="gender">
+                <option valeur="man">Homme</option>
+                <option valeur="woman>">Femme</option>
+            </select>
+        </div>
+        <div>
+            <label>Personnes à charge :</label>
+            <input type="number" id="input-dependents" name="dependents">
+        </div>
+        <button id="compute">Calculer</button><button>Effacer</button>
+    </form>
+    
+    <hr>
+
+    <!-- Affichage des résultats -->
+
+    <div>
+        <span>Impôt sur le revenu : </span>
+        <span id="output-income-tax"></span>€
+    </div>
+    <div>
+        <span>Assurance employé : </span>
+        <span id="output-employee-insurance"></span>€
+    </div>
+    <div>
+        <span>Régime de pension du Canada : </span>
+        <span id="output-pension-plan"></span>€
+    </div>
+    <div>
+        <span>Suppléments : </span>
+        <span id="output-extras"></span>€
+    </div>
+    <div>
+        <span>Salaire net : </span>
+        <span id="output-net-salary"></span>€
+    </div>
+
+    <!-- Charger le script seulement lorsque tous les éléments sont chargés -->
+
+    <script language="javascript" src="./index.js"></script>
+</body>
+
+</html>
