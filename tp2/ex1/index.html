@@ -1,47 +1,28 @@
 <html>
-<head>
-    <title> TP JavaScript </title>
-    <style>
-    </style>
-    <script language="javascript">
-        function Calculer_PrixTTC(){
-            var Champ_Texte_PU ;
-            var Champ_Texte_TVA ;
-            var Champ_Texte_QT ;
-            var Champ_Texte_PTTC ;
-            var Prix_Unitaire ;
-            var Taux_TVA ;
-            var Quantite ;
-            var Prix_TTC ;
-            Champ_Texte_PU = document.getElementById('PU');
-            Champ_Texte_TVA = document.getElementById('TVA');
-            Champ_Texte_QT = document.getElementById('QT');
-            Champ_Texte_PTTC = document.getElementById('PT');
-            Prix_Unitaire = parseFloat(Champ_Texte_PU.value);
-            Taux_TVA = parseFloat(Champ_Texte_TVA.value);
-            Quantite = parseFloat(Champ_Texte_QT.value);
-            Prix_TTC =
-            (Prix_Unitaire*Quantite)+(Prix_Unitaire*Quantite*Taux_TVA/100);
-            Champ_Texte_PTTC.value = Prix_TTC ;
-        }
-    </script>
-</head>
-<body>
+  <head>
+    <title>TP JavaScript</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
+    <link rel="stylesheet" type="text/css" title="design" href="./style.css"/>
+  </head>
+  <body>
+    <!-- Champs à remplir pour le calcul du prix TTC des produits -->
     <fieldset>
-        <legend> Calcul du Prix TTC </legend>
-        Prix unitaire HTC : <br>
-        <input type=‟text” size=‟20” id=‟PU”/>
-        <br>
-        Taux TVA : <br>
-        <input type=‟text” size=‟20” id=‟TVA”/>
-        <br>
-        Quantite : <br>
-        <input type=‟text” size=‟20” id=‟QT”/>
-        <br>
-        <input type=‟button” value=‟Calculer” Onclick="Calculer_PrixTTC() ;" />
-        <br>
-        Prix TTC : <br>
-        <input type=‟text” size=‟20” id=‟PT”/>
+      <legend>Calcul du Prix TTC</legend>
+      Prix unitaire HTC : <br />
+      <input type="text" size="20" id="PU" />
+      <br />
+      Taux TVA : <br />
+      <input type="text" size="20" id="TVA" />
+      <br />
+      Quantite : <br />
+      <input type="text" size="20" id="QT" />
+      <br />
+      <button id="calculate">Calculer</button>
+      <br />
+      Prix TTC : <br />
+      <input type="text" size="20" id="PT" />
     </fieldset>
-</body>
+    <!-- Charger le script seulement lorsque tous les éléments sont chargés -->
+    <script language="javascript" src="./index.js"></script>
+  </body>
 </html>
