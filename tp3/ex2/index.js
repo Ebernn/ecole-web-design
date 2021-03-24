@@ -92,9 +92,8 @@ const shopElement = document.getElementById('boutique'),
 
 /**
  * Mise à jour de l'affichage du cadis
- * @param {Product[]} products Les produits dans le cadis
  */
-const updateCart = products => {
+const updateCart = () => {
     // Tableau des couples (id, count)
     const arr = Array.from(cart.entries());
     // Mise à jour de la liste affichée
@@ -116,8 +115,25 @@ const updateShop = products => {
     shopElement.replaceChildren(...products
         .map(product => createShopElement(product, count => {
             cart.set(product.id, count);
-            updateCart(products);
+            updateCart();
         }, cart.get(product.id))));
 };
 
 updateShop(products);
+
+// Barre de recherche
+
+filterElement.addEventListener('input', e => {
+    // On récupère le texte tapé dans la barre
+    const input = e.target.value;
+    // Si l'input est vide, on reinitialise la vitrine
+    if (input === '') return updateShop(products);
+    // Sinon on lance la recherche
+    const fuse = new Fuse(products, {
+        includeScore: true,
+        keys: ['id', 'name']
+    });
+    const results = fuse.search(input);
+    // Une fois les résultats obtenus, on met à jour la vitrine
+    updateShop(results.map(({ item }) => item));
+})
