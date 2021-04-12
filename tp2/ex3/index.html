@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title> TP JavaScript - exercice 2</title>
+</head>
+<body>
+  <p><b>Composez votre menu</b></p>
+  <span>
+    <span>
+      <label>Entrée :</label>
+      <select type="select" id="input-entree" name="entree">
+        <option value="legumes" data-price="2.5">Légumes d'hiver</option>
+        <option value="truite" data-price="3.5">Truite grillée</option>
+        <option value="souffle" data-price="3.0">Soufflé au fromage</option>
+        <option value="tomates" data-price="3.2">Tomates farcies</option>
+        <option value="salade" data-price="2.8">Salade de lentilles</option>
+      </select>
+    </span>
+    <span>
+      <label>Plat :</label>
+      <select type="select" id="input-plat" name="plat">
+        <option value="tartare" data-price="11.0">Tartare de bar au gingembre</option>
+        <option value="gratin" data-price="9.8">Gratin de pennes à la tomate</option>
+        <option value="poulet" data-price="9.5">Poulet aux herbes</option>
+        <option value="ravioles" data-price="8.0">Ravioles frites</option>
+        <option value="tagliatelles" data-price="8.0">Tagliatelles au bacon</option>
+        <option value="fish" data-price="9.0">Fish and chips</option>
+      </select>
+    </span>
+    <span>
+      <label>Dessert :</label>
+      <select type="select" id="input-dessert" name="dessert">
+        <option value="man" data-price="2.0">Pancakes</option>
+        <option value="gateau" data-price="2.5">Gâteau à l'ananas</option>
+        <option value="financier" data-price="2.5">Financier</option>
+      </select>
+    </span>
+    <button id="choisir">Choisir</button>
+  </span>
+  <hr>
+  <p><b>Montant à payter</b></p>
+  <table>
+    <tr>
+      <td>Entrée</td>
+      <td>:</td>
+      <td id="montant-entree"></td>
+    </tr>
+    <tr>
+      <td>Plat</td>
+      <td>:</td>
+      <td id="montant-plat"></td>
+    </tr>
+    <tr>
+      <td>Dessert</td>
+      <td>:</td>
+      <td id="montant-dessert"></td>
+    </tr>
+  </table>
+  <hr>
+  <p><b id="total">Total :</b></p>
+   <!-- Charger le script seulement lorsque tous les éléments sont chargés -->
+   <script language="javascript" src="./index.js"></script>
+</body>
+</html>
