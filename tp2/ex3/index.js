@@ -15,14 +15,14 @@ const choiceButton = document.getElementById("choisir");
  * @param {HTMLSelectElement} e Elément HTML <select>
  * @returns {HTMLOptionElement} L'élément option sélectionné
  */
-const getSelectedElement = e => e.options[e.selectedIndex];
+const getSelectedElement = (e) => e.options[e.selectedIndex];
 
 /**
  * Fonction utilitaire pour récupérer le prix de l'élément
  * @param {HTMLOptionElement} e Elément option sélectionné
  * @returns {number} Le prix de l'élément sélectionné
  */
-const getPrice = e => parseFloat(e.getAttribute("data-price"));
+const getPrice = (e) => parseFloat(e.getAttribute("data-price"));
 
 /**
  * Mise à jour de l'affiche du montant
@@ -36,8 +36,10 @@ const updatePreview = () => {
   entryAmountElement.innerHTML = `${entryAmount} €`;
   dishAmountElement.innerHTML = `${dishAmount} €`;
   puddingAmountElement.innerHTML = `${puddingAmount} €`;
-  totalAmountElement.innerHTML = `Total : ${entryAmount + dishAmount + puddingAmount} €`;
+  totalAmountElement.innerHTML = `Total : ${
+    entryAmount + dishAmount + puddingAmount
+  } €`;
 };
 
 // On met à jour l'affiche à chaque click du bouton "Choisir"
-choiceButton.addEventListener('click', updatePreview);
+choiceButton.addEventListener("click", updatePreview);
