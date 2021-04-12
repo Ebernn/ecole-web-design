@@ -6,6 +6,7 @@
   <p><b>Composez votre menu</b></p>
   <span>
     <span>
+      <!-- Sélection de l'entrée -->
       <label>Entrée :</label>
       <select type="select" id="input-entree" name="entree">
         <option value="legumes" data-price="2.5">Légumes d'hiver</option>
@@ -16,6 +17,7 @@
       </select>
     </span>
     <span>
+      <!-- Sélection du plat -->
       <label>Plat :</label>
       <select type="select" id="input-plat" name="plat">
         <option value="tartare" data-price="11.0">Tartare de bar au gingembre</option>
@@ -27,6 +29,7 @@
       </select>
     </span>
     <span>
+      <!-- Sélection du dessert -->
       <label>Dessert :</label>
       <select type="select" id="input-dessert" name="dessert">
         <option value="man" data-price="2.0">Pancakes</option>
@@ -34,9 +37,11 @@
         <option value="financier" data-price="2.5">Financier</option>
       </select>
     </span>
+    <!-- Bouton "Choisir" -->
     <button id="choisir">Choisir</button>
   </span>
   <hr>
+  <!-- Résumé du montant à payer -->
   <p><b>Montant à payter</b></p>
   <table>
     <tr>
@@ -57,7 +62,7 @@
   </table>
   <hr>
   <p><b id="total">Total :</b></p>
-   <!-- Charger le script seulement lorsque tous les éléments sont chargés -->
-   <script language="javascript" src="./index.js"></script>
+  <!-- Charger le script seulement lorsque tous les éléments sont chargés -->
+  <script language="javascript" src="./index.js"></script>
 </body>
 </html>
