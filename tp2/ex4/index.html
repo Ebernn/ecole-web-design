@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>Exercice 4 TP JavaScript</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      type="text/css"
+      media="screen"
+    />
+    <script language="javascript" src="javascript/traitement.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="container">
+        <div id="banner">
+          <img id="b_img" src="img/logo_epf_0.png" />
+        </div>
+        <div id="menu">
+          <ul>
+            <li class="root">
+              <a href="#"><img src="img/home-button.png" alt="" /></a>
+            </li>
+            <li class="separator"></li>
+            <li class="link"><a href="#">Intégration HTML</a></li>
+            <li class="separator"></li>
+            <li class="link"><a href="#">CSS</a></li>
+            <li class="separator"></li>
+            <li class="link">
+              <a href="">JavaScript</a>
+            </li>
+            <li class="separator"></li>
+            <li class="link"><a href="#">Php</a></li>
+            <li class="separator"></li>
+            <li class="link"><a href="#">Autres ...</a></li>
+            <li class="separator"></li>
+          </ul>
+        </div>
+
+        <div id="content" class="box">
+          <br />
+          <center>
+            <img
+              id="imag"
+              src="img/Saint_Cloud.jpg"
+              width="350"
+              height="300"
+              name="Photo_TP2"
+              border="2"
+            />
+          </center>
+          <br />
+          <fieldset>
+            <legend>Propriété d'une image</legend>
+            <input
+              type="button"
+              value="Lire Propriétés"
+              onclick="Lire_Propriete();"
+            />
+            <input
+              type="button"
+              value="Ecrire Propriétés"
+              onclick="Ecrire_Propriete();"
+            />
+            <br />
+            Bordure :<br />
+            <input type="text" id="bord" size="50" />
+            <br />
+            Hauteur :<br />
+            <input type="text" id="haut" size="50" />
+            <br />
+            Largeur :<br />
+            <input type="text" id="larg" size="50" />
+            <br />
+            Nom :<br />
+            <input type="text" id="Nom" size="50" />
+            <br />
+            Source :<br />
+            <input type="text" id="sorc" size="50" />
+            <br />
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
